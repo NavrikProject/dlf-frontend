@@ -48,7 +48,7 @@ function App() {
     try {
       // Send the file and other data to the backend
       const response = await axios.post(
-        "http://127.0.0.1:5000/upload",
+        "https://dlf-backend.azurewebsites.net/upload",
         formData,
         {
           headers: {
@@ -103,30 +103,29 @@ function App() {
           </form>
         </div>
 
-
         <div className="below-area">
-       
-        <div className="container-area"> {pdfFile ? (
-            ""
-          ) : (
-            <img className="document-image" src="" alt="Document Image" />
-          )}
-          {pdfFile && (
-            <div>
-              <embed
-                src={pdfFile}
-                type="application/pdf"
-                width="100%"
-                height="600px"
-              />
-            </div>
-          )}</div>
-           <div>
-          <h2>Extracted Text:</h2>
-          <p className="ext-area">{text}</p>
-        </div>
-
-
+          <div className="container-area">
+            {" "}
+            {pdfFile ? (
+              ""
+            ) : (
+              <img className="document-image" src="" alt="Document Image" />
+            )}
+            {pdfFile && (
+              <div>
+                <embed
+                  src={pdfFile}
+                  type="application/pdf"
+                  width="100%"
+                  height="600px"
+                />
+              </div>
+            )}
+          </div>
+          <div>
+            <h2>Extracted Text:</h2>
+            <p className="ext-area">{text}</p>
+          </div>
         </div>
       </div>
     </>
