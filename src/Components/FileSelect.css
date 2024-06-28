@@ -1,0 +1,45 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.pdfContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.extractionContainer {
+  width: 100% !important;
+}
+
+/* Split screen container */
+.split-screen {
+  display: flex;
+  height: 100vh;
+  padding: 10px;
+}
+
+/* Left and right halves */
+.left-half,
+.right-half {
+  width: 50%;
+  overflow-y: auto;
+  border: 1px solid #111;
+  margin: 0 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Content styles */
+.content {
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+}

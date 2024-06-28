@@ -1,4 +1,14 @@
-:root{
+:root {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  /* height: 100vh !important; */
+  /* overflow: hidden !important; */
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial;
+  width: 100% !important;
+}
+h3 {
+  margin: 0 0 10px 0;
 }

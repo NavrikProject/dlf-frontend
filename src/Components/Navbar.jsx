@@ -1,22 +1,24 @@
 import "./Navbar.css";
-
+import Logo from "../assets/DLF_logo.svg";
 const Navbar = () => {
   return (
-    <div>
-      <div className="navbar">
-        <div className="navbar-left">
-          <a href="#">Home</a>
+    <>
+      <nav>
+        <div>
+          <div className="navbar">
+            <div className="navbar-left">
+              <img className="logo" src={Logo} alt="" />
+            </div>
+            <div className="navbar-right">
+              <a href="/">Home</a>
+              <a href="#">About</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
         </div>
-        <div className="center">
-          <div className="logo">DLF </div>
-        </div>
-        <div className="navbar-right">
-          <a href="#">About</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Logout</a>
-        </div>
-      </div>
-    </div>
+      </nav>
+    </>
   );
 };
 

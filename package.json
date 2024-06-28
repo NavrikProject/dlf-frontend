@@ -1,7 +1,6 @@
 {
   "name": "new-folder--3-",
   "private": true,
-  "homepage": ".",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -13,7 +12,9 @@
   "dependencies": {
     "axios": "^1.7.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
